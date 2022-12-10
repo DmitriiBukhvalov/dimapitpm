@@ -22,8 +22,11 @@ def um():
 def de():
     a = int(number1.get())
     b = int(number2.get())
-    c = a/b
-    lab['text'] = str(c)
+    if b == 0:
+        lab['text'] = "Ошибка. На 0 делить нельзя"
+    else:
+        c = a/b
+        lab['text'] = str(c)
 
 def st():
     a = int(number1.get())
